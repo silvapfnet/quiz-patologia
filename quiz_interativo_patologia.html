@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Interativo - Patologia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #f5f7fa, #c3cfe2);
+      padding: 20px;
+    }
+    .quiz-container {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      position: relative;
+    }
+    h2, h3 {
+      color: #2c3e50;
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+    .answers label {
+      display: block;
+      margin: 8px 0;
+      background: #ecf0f1;
+      padding: 8px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .answers label:hover {
+      background: #dfe6e9;
+    }
+    button {
+      background: #27ae60;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto 0 auto;
+      font-size: 16px;
+      animation: pulse 1.5s infinite;
+    }
+    button:disabled {
+      background: #95a5a6;
+      animation: none;
+    }
+    .result, .ranking {
+      margin-top: 30px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .timer {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #e74c3c;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-weight: bold;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0.6; }
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    .bar {
+      height: 24px;
+      margin: 5px 0;
+      background: #3498db;
+      color: white;
+      padding-left: 10px;
+      line-height: 24px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+<p style="text-align:center;">Este é o modelo base do jogo interativo. Para funcionalidade completa, use a versão final com JavaScript incorporado exportada anteriormente.</p>
+</body>
+</html>
